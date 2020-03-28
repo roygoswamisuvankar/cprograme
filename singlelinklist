@@ -83,6 +83,7 @@ void del_beg(){
         tmp = head;
         head = head->next;
         printf("\nDeleted node is: %d",tmp->data);
+        free(tmp);
         printf("\nDeleted node at begening successfully");
         display();
     }
